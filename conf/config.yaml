@@ -1,0 +1,16 @@
+defaults:
+  - stage: train
+  - transforms: ${model}_minimal
+  - dataset/train: mnist
+  - dataset/valid: mnist
+  - dataloader: small
+  - model: simple_conv
+  - optimizer: adam
+  - scheduler: cyclic
+  - criterion: nllloss
+  - callbacks/metrics: mnist
+  - callbacks/checkpoints: mnist
+  - callbacks/loggers: mnist
+  - runner: supervised
+  - hyperparams
+  - env

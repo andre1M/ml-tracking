@@ -1,0 +1,10 @@
+.venv
+.python-version
+outputs
+multirun
+mlruns
+.DS_Store
+.idea
+**/__pycache__/
+*.py[cod]
+*$py.class

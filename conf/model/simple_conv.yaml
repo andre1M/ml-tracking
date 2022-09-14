@@ -1,0 +1,2 @@
+_target_: modules.models.simple_conv.SimpleConv
+num_classes: 10

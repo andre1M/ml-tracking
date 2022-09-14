@@ -1,0 +1,14 @@
+accuracy:
+  _target_: catalyst.callbacks.metrics.accuracy.AccuracyCallback
+  input_key: "logits"
+  target_key: "targets"
+  topk: [1, 2, 3]
+  num_classes: 10
+  log_on_batch: False
+
+confusion_matrix:
+  _target_: catalyst.callbacks.metrics.confusion_matrix.ConfusionMatrixCallback
+  input_key: "logits"
+  target_key: "targets"
+  class_names: [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" ]
+  num_classes: 10

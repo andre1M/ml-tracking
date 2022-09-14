@@ -1,0 +1,3 @@
+_target_: modules.models.simple_mlp.SimpleMLP
+in_features: 784
+num_classes: 10

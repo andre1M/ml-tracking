@@ -1,0 +1,8 @@
+metric_checkpoint:
+  _target_: catalyst.callbacks.checkpoint.CheckpointCallback
+  logdir: ${logdir}/checkpoints
+  loader_key: "valid"
+  metric_key: "accuracy01"
+  minimize: False
+  topk: 1
+  mode: "model"

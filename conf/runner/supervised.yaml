@@ -1,0 +1,5 @@
+_target_: catalyst.runners.supervised.SupervisedRunner
+input_key: "features"
+output_key: "logits"
+target_key: "targets"
+loss_key: "loss"

@@ -1,0 +1,8 @@
+mlflow:
+  _target_: catalyst.loggers.mlflow.MLflowLogger
+  experiment: "tracking_experiments"
+  run: ${model._target_}_${now:%Y-%m-%d}_${now:%H-%M-%S}
+
+tensorboard:
+  _target_: catalyst.loggers.tensorboard.TensorboardLogger
+  logdir: ${logdir}/tensorboard

@@ -1,0 +1,5 @@
+_target_: torchvision.datasets.MNIST
+root: ${data_root}
+transform: ${transforms}
+train: False
+download: True
